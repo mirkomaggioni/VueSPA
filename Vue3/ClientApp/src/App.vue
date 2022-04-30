@@ -7,11 +7,6 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!--<ul class="navbar-nav me-auto offset-md-5 mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <h3 class="text-white">Gestione Progetti</h3>
-                        </li>
-                    </ul>-->
                     <div class="col-9"></div>
                     <div class="col-2" style="text-align: right;">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -22,23 +17,6 @@
                 </div>
             </div>
         </nav>
-
-        <!--<nav class="navbar navbar-light bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Confluence</a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Gestione Progetti</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>-->
 
         <div class="row" style="margin-top: 10px;">
             <div class="col-2">
@@ -58,56 +36,13 @@
                 <router-view></router-view>
             </div>
         </div>
-
-
-
-        <!--<v-navigation-drawer persistent
-                             :mini-variant="miniVariant"
-                             :clipped="clipped"
-                             v-model="drawer"
-                             enable-resize-watcher
-                             fixed
-                             app>
-            <v-list>
-                <v-list-item value="true" v-for="(item, i) in items" :key="i" :to="item.link">
-                    <v-list-item-action>
-                        <v-icon v-html="item.icon"></v-icon>
-                    </v-list-item-action>
-                    <v-list-item-content>
-                        <v-list-item-title v-text="item.title"></v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
-            </v-list>
-        </v-navigation-drawer>
-
-        <v-app-bar app :clipped-left="clipped" color="info" dark>
-            <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-            <v-btn class="d-none d-lg-flex" icon @click.stop="miniVariant = !miniVariant">
-                <v-icon v-html="miniVariant ? 'mdi-chevron-right' : 'mdi-chevron-left'"></v-icon>
-            </v-btn>
-            <v-btn class="d-none d-lg-flex" icon @click.stop="clipped = !clipped">
-                <v-icon>mdi-web</v-icon>
-            </v-btn>
-            <v-toolbar-title v-text="title"></v-toolbar-title>
-            <v-spacer></v-spacer>
-        </v-app-bar>
-
-        <v-main>
-            <router-view />
-        </v-main>
-
-        <v-footer app>
-            <span v-text="title"></span>
-        </v-footer>-->
     </v-app>
 </template>
 
 <script>
     export default {
         data() {
-            return {
-                title: 'Confluence'
-            };
+            return {};
         }
     };
 </script>
